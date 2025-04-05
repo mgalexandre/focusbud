@@ -12,6 +12,8 @@ struct focusbudApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .containerBackground(.black, for: .window)
+                .toolbarBackgroundVisibility(.hidden, for: .windowToolbar)
         }
     }
 }
