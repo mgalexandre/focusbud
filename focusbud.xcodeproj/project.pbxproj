@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		579041C02DA5563400CED0A8 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 579041BF2DA5563400CED0A8 /* Markdown */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		574021722DA18EF8008A751B /* focusbud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = focusbud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579041C02DA5563400CED0A8 /* Markdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = focusbud;
 			packageProductDependencies = (
+				579041BF2DA5563400CED0A8 /* Markdown */,
 			);
 			productName = focusbud;
 			productReference = 574021722DA18EF8008A751B /* focusbud.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 574021692DA18EF7008A751B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				579041BE2DA5563400CED0A8 /* XCRemoteSwiftPackageReference "swift-markdown" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 574021732DA18EF8008A751B /* Products */;
 			projectDirPath = "";
@@ -315,6 +324,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		579041BE2DA5563400CED0A8 /* XCRemoteSwiftPackageReference "swift-markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftlang/swift-markdown.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		579041BF2DA5563400CED0A8 /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 579041BE2DA5563400CED0A8 /* XCRemoteSwiftPackageReference "swift-markdown" */;
+			productName = Markdown;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5740216A2DA18EF7008A751B /* Project object */;
 }
